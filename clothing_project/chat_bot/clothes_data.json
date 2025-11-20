@@ -1,0 +1,2302 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hello", "hi", "hey", "hey there", "hi bot", "anyone there", "hello friend", "hey assistant", "hi bro"],
+      "responses": ["hello! how can i assist with your clothing needs today?"]
+    },
+    {
+      "tag": "casual_greeting",
+      "patterns": ["yo", "sup", "what's up", "oi", "hey dude", "yo bot", "hey buddy", "hello bro"],
+      "responses": ["hey! what style are you looking for today?"]
+    },
+    {
+      "tag": "morning_greeting",
+      "patterns": ["good morning", "morning", "gm", "morning bot", "hi morning", "good morning friend", "morning assistant", "gm bro"],
+      "responses": ["good morning! ready for some fashion suggestions today?"]
+    },
+    {
+      "tag": "evening_greeting",
+      "patterns": ["good evening", "evening bot", "good eve", "eve bro", "hello evening", "evening assistant", "evening friend", "gm no"],
+      "responses": ["good evening! how can I help with clothing today?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "catch you later", "bye bot", "talk later", "ok bye", "thanks bye"],
+      "responses": ["goodbye! come back anytime for more fashion help!"]
+    },
+    {
+      "tag": "asking",
+      "patterns": ["thanks", "thank you", "thx", "ty", "appreciate it", "cool thanks", "nice thanks", "thanks bot"],
+      "responses": ["you're welcome! happy to help!"]
+    },
+    {
+      "tag": "color_black",
+      "patterns": [
+        "what matches with black",
+        "black outfit combo",
+        "black styling ideas",
+        "black color match",
+        "black goes with what",
+        "how to style black",
+        "black dress match",
+        "black shirt combo"
+      ],
+      "responses": ["black goes well with white, grey, red, beige, blue and almost anything."]
+    },
+    {
+      "tag": "color_white",
+      "patterns": [
+        "what matches with white",
+        "white outfit ideas",
+        "white combination",
+        "white color match",
+        "white styling tips",
+        "white goes with what",
+        "white shirt combo",
+        "white top match"
+      ],
+      "responses": ["white pairs perfectly with blue, black, green, beige and pastel colors."]
+    },
+    {
+      "tag": "color_blue",
+      "patterns": [
+        "blue color match",
+        "blue outfit ideas",
+        "blue combination",
+        "how to style blue",
+        "top for blue jeans",
+        "blue outfit match",
+        "blue pant combo",
+        "blue dress match"
+      ],
+      "responses": ["blue suits well with white, black, grey, yellow and pastel shades."]
+    },
+    {
+      "tag": "color_red",
+      "patterns": [
+        "red combination",
+        "what matches red",
+        "red outfit ideas",
+        "how to style red",
+        "red dress match",
+        "red top combination",
+        "red styling tips",
+        "red goes with what"
+      ],
+      "responses": ["red goes well with black, white, gold, beige and denim."]
+    },
+    {
+      "tag": "color_green",
+      "patterns": [
+        "green outfit ideas",
+        "green combination",
+        "how to style green",
+        "green dress match",
+        "green color match",
+        "green goes with what",
+        "green top combo",
+        "what suits green"
+      ],
+      "responses": ["green pairs well with white, beige, brown, black and navy blue."]
+    },
+    {
+      "tag": "college_outfit",
+      "patterns": [
+        "college outfit",
+        "what to wear to college",
+        "college fashion",
+        "college dress ideas",
+        "simple college outfit",
+        "college look today",
+        "daily college outfit",
+        "college style tips"
+      ],
+      "responses": ["jeans, tees, hoodies, sneakers, casual shirts and comfortable clothes are perfect for college."]
+    },
+    {
+      "tag": "office_formal",
+      "patterns": [
+        "office outfit",
+        "formal wear ideas",
+        "what to wear to office",
+        "office dressing tips",
+        "office clothes suggestions",
+        "office formal look",
+        "formal styling",
+        "formal dress code"
+      ],
+      "responses": ["shirts, trousers, blazers, pencil skirts, kurtis and loafers work great for office formals."]
+    },
+    {
+      "tag": "party_wear",
+      "patterns": [
+        "party outfit",
+        "party wear ideas",
+        "night party dress",
+        "what to wear to party",
+        "party fashion tips",
+        "party look inspiration",
+        "party dresses",
+        "party style ideas"
+      ],
+      "responses": ["choose shimmer tops, jackets, bodycon dresses, stylish heels and bold outfits for parties."]
+    },
+    {
+      "tag": "wedding_outfit",
+      "patterns": [
+        "wedding outfit ideas",
+        "what to wear to wedding",
+        "wedding dress help",
+        "wedding fashion tips",
+        "wedding look suggestions",
+        "wedding styling",
+        "wedding clothes",
+        "guest wedding outfit"
+      ],
+      "responses": ["opt for sarees, gowns, sherwanis, suits or pastel formal wear for weddings."]
+    },
+    {
+      "tag": "brand_asos",
+      "patterns": [
+        "asos clothing",
+        "asos brand",
+        "asos outfits",
+        "asos products",
+        "show asos items",
+        "asos fashion",
+        "asos dresses",
+        "asos tops"
+      ],
+      "responses": ["ASOS offers trendy streetwear, casuals, party wear and accessories."]
+    },
+    {
+      "tag": "brand_adidas",
+      "patterns": [
+        "adidas clothes",
+        "adidas t shirts",
+        "adidas hoodies",
+        "adidas outfits",
+        "what does adidas sell",
+        "adidas brand info",
+        "adidas products",
+        "adidas clothing collection"
+      ],
+      "responses": ["Adidas provides sportswear, athleisure, sneakers and comfortable streetwear."]
+    },
+    {
+      "tag": "brand_puma",
+      "patterns": [
+        "puma clothes",
+        "puma brand",
+        "puma outfits",
+        "puma hoodies",
+        "puma t shirts",
+        "puma clothing items",
+        "puma fashion",
+        "show puma products"
+      ],
+      "responses": ["Puma sells sporty outfits, track sets, hoodies, shoes and athleisure clothing."]
+    },
+    {
+      "tag": "brand_boohoo",
+      "patterns": [
+        "boohoo brand",
+        "boohoo clothes",
+        "boohoo outfits",
+        "boohoo dresses",
+        "boohoo fashion",
+        "boohoo products",
+        "show boohoo collection",
+        "boohoo item list"
+      ],
+      "responses": ["Boohoo specializes in affordable trendy wear, dresses, tops and fast-fashion pieces."]
+    },
+    {
+      "tag": "brand_hnm",
+      "patterns": [
+        "h&m clothes",
+        "hnm clothing",
+        "hnm brand info",
+        "h&m outfits",
+        "h&m shirts",
+        "hnm dresses",
+        "show h&m items",
+        "h&m fashion help"
+      ],
+      "responses": ["H&M offers budget-friendly casuals, basics, trendy outfits and formals."]
+    },
+    {
+      "tag": "brand_depop",
+      "patterns": [
+        "depop brand",
+        "depop clothes",
+        "what is depop",
+        "depop outfits",
+        "depop fashion",
+        "depop shop",
+        "depop sells what",
+        "show depop items"
+      ],
+      "responses": ["Depop is a social shopping marketplace for unique, vintage and trendy clothing pieces."]
+    },
+    {
+      "tag": "size_help",
+      "patterns": [
+        "help me choose size",
+        "which size is right",
+        "how to know my size",
+        "size suggestion",
+        "size guide help",
+        "what size fits me",
+        "size confusion",
+        "m or l which one"
+      ],
+      "responses": ["measure your chest, waist and hips—then compare with our size chart for best fit."]
+    },
+    {
+      "tag": "size_conversion",
+      "patterns": [
+        "size conversion help",
+        "convert us to uk size",
+        "international size chart",
+        "how to convert clothing size",
+        "us size to eu",
+        "size difference guide",
+        "convert size for me",
+        "m equals what size"
+      ],
+      "responses": ["I can convert US, UK and EU sizes for any brand. tell me which item you're checking."]
+    },
+    {
+      "tag": "size_issue",
+      "patterns": [
+        "size too big",
+        "size too small",
+        "wrong size received",
+        "clothes don't fit",
+        "my shirt is tight",
+        "pant too loose",
+        "fitting problem",
+        "sizing issue"
+      ],
+      "responses": ["no worries! you can exchange sizes easily—tell me which item you're facing issue with."]
+    },
+    {
+      "tag": "summer_outfit",
+      "patterns": [
+        "summer outfit ideas",
+        "what to wear in summer",
+        "summer clothes help",
+        "summer fashion tips",
+        "cool outfits for summer",
+        "summer dressing style",
+        "summer casual wear",
+        "hot weather outfit"
+      ],
+      "responses": ["light cotton shirts, shorts, breathable tees and loose dresses are perfect for summer."]
+    },
+    {
+      "tag": "winter_outfit",
+      "patterns": [
+        "winter outfit ideas",
+        "what to wear in winter",
+        "winter dressing",
+        "winter fashion tips",
+        "cold weather outfit",
+        "winter clothes suggestions",
+        "winter warm wear",
+        "winter look inspiration"
+      ],
+      "responses": ["layer with sweaters, hoodies, jackets, thermals and boots to stay warm and stylish."]
+    },
+    {
+      "tag": "rainy_outfit",
+      "patterns": [
+        "rainy outfit",
+        "what to wear in rainy season",
+        "rain clothes",
+        "rain fashion tips",
+        "rainproof outfit",
+        "rain coat suggestions",
+        "rainy season dressing",
+        "monsoon outfit ideas"
+      ],
+      "responses": ["quick-dry clothes, waterproof jackets, gumboots and dark colors work best for monsoon."]
+    },
+    {
+      "tag": "date_outfit",
+      "patterns": [
+        "date outfit ideas",
+        "what to wear on date",
+        "romantic outfit",
+        "dressing for date",
+        "date look suggestions",
+        "date night outfit",
+        "date clothing help",
+        "date fashion"
+      ],
+      "responses": ["go for clean, stylish looks like fitted shirts, dresses, smart casuals or pastel combos."]
+    },
+    {
+      "tag": "gym_outfit",
+      "patterns": [
+        "gym outfit ideas",
+        "what to wear to gym",
+        "gym clothing",
+        "workout clothes help",
+        "gym wear suggestions",
+        "activewear ideas",
+        "gym fashion",
+        "workout outfit tips"
+      ],
+      "responses": ["choose breathable tees, trackpants, compression wear, shorts and comfortable sneakers."]
+    },
+    {
+      "tag": "travel_outfit",
+      "patterns": [
+        "travel outfit ideas",
+        "what to wear for travel",
+        "airport outfit",
+        "comfortable travel clothes",
+        "travel fashion tips",
+        "trip clothing help",
+        "travel wear suggestions",
+        "best travel look"
+      ],
+      "responses": ["comfortable joggers, hoodies, t-shirts, sneakers and breathable fabrics work well for travel."]
+    },
+    {
+      "tag": "birthday_outfit",
+      "patterns": [
+        "birthday outfit ideas",
+        "what to wear on birthday",
+        "birthday clothing suggestions",
+        "birthday dress",
+        "birthday look",
+        "birthday party outfit",
+        "birthday fashion",
+        "special day outfit"
+      ],
+      "responses": ["choose something stylish—like dresses, blazers, co-ords or statement tops for a birthday look."]
+    },
+    {
+      "tag": "festival_outfit",
+      "patterns": [
+        "festival outfit ideas",
+        "festival clothing",
+        "what to wear for festival",
+        "traditional look",
+        "ethnic outfit ideas",
+        "festival fashion",
+        "festival dressing style",
+        "ethnic wear suggestions"
+      ],
+      "responses": ["festivals call for ethnic wear like kurta sets, sarees, lehengas, jackets and festive colors."]
+    },
+    {
+      "tag": "sport_outfit",
+      "patterns": [
+        "sports outfit",
+        "what to wear for sports",
+        "sports clothing help",
+        "sportswear ideas",
+        "sport fashion tips",
+        "athletic outfit",
+        "running outfit",
+        "sports dress suggestions"
+      ],
+      "responses": ["sports outfits include tank tops, dri-fit shirts, shorts, trackpants and flexible shoes."]
+    },
+    {
+      "tag": "beach_outfit",
+      "patterns": [
+        "beach outfit ideas",
+        "what to wear on beach",
+        "beach clothes",
+        "beach fashion",
+        "beachwear suggestions",
+        "summer beach look",
+        "beach dressing",
+        "ocean side outfit"
+      ],
+      "responses": ["wear shorts, tank tops, light shirts, slippers, sunglasses and airy fabrics for beach."]
+    },
+    {
+      "tag": "shoe_recommendation",
+      "patterns": [
+        "suggest shoes",
+        "best shoes for outfit",
+        "shoes for jeans",
+        "formal shoes help",
+        "casual shoes ideas",
+        "shoes recommendation",
+        "shoes match outfit",
+        "footwear help"
+      ],
+      "responses": ["sneakers for casual, loafers for office, heels for party and boots for winter."]
+    },
+    {
+      "tag": "jeans_recommendation",
+      "patterns": [
+        "which jeans to wear",
+        "jeans style help",
+        "jeans recommendation",
+        "best jeans for me",
+        "jeans look ideas",
+        "jeans suggestions",
+        "what jeans suit me",
+        "jeans matching tips"
+      ],
+      "responses": ["slim-fit, regular, baggy, ripped, or straight jeans depend on your style preference."]
+    },
+    {
+      "tag": "shirt_recommendation",
+      "patterns": [
+        "shirt suggestion",
+        "which shirt should i wear",
+        "best shirts for men",
+        "shirt outfit ideas",
+        "shirt matching help",
+        "shirt for jeans",
+        "shirt for office",
+        "shirt style tips"
+      ],
+      "responses": ["solid shirts, checks, stripes, linen shirts and polos work great for many outfits."]
+    },
+    {
+      "tag": "tshirt_recommendation",
+      "patterns": [
+        "t shirt suggestions",
+        "best tshirts",
+        "tshirt for jeans",
+        "casual tshirt ideas",
+        "printed tshirt help",
+        "tshirt outfit",
+        "which t shirt is good",
+        "t shirt styling tips"
+      ],
+      "responses": ["graphic tees, oversized tees, plain basics, cotton t-shirts and polos are good choices."]
+    },
+    {
+      "tag": "hoodie_recommendation",
+      "patterns": [
+        "hoodie suggestions",
+        "best hoodies",
+        "hoodie outfit ideas",
+        "hoodie for winter",
+        "oversized hoodie",
+        "hoodie matching tips",
+        "hoodie styling",
+        "hoodie fashion help"
+      ],
+      "responses": ["hoodies pair well with joggers, jeans, and sneakers for a comfy casual look."]
+    },
+    {
+      "tag": "jacket_recommendation",
+      "patterns": [
+        "jacket suggestions",
+        "best jacket",
+        "jacket outfit ideas",
+        "winter jacket",
+        "denim jacket styling",
+        "leather jacket help",
+        "jacket for party",
+        "how to style jacket"
+      ],
+      "responses": ["denim, leather, bomber, puffer and varsity jackets are great depending on look & season."]
+    },
+    {
+      "tag": "kurti_recommendation",
+      "patterns": [
+        "kurti suggestions",
+        "best kurti style",
+        "kurti outfit ideas",
+        "kurti for office",
+        "kurti matching tips",
+        "kurti fashion help",
+        "kurti dress ideas",
+        "kurti combinations"
+      ],
+      "responses": ["straight-cut, A-line, anarkali or cotton kurtis suit casual, office or festive looks."]
+    },
+    {
+      "tag": "saree_recommendation",
+      "patterns": [
+        "saree suggestions",
+        "best saree style",
+        "saree outfit ideas",
+        "saree colors",
+        "saree fashion",
+        "saree matching tips",
+        "which saree to wear",
+        "party saree ideas"
+      ],
+      "responses": ["choose silk, georgette, chiffon or organza sarees depending on event and comfort."]
+    },
+    {
+      "tag": "skirt_recommendation",
+      "patterns": [
+        "skirt outfit ideas",
+        "best skirt style",
+        "skirt suggestions",
+        "skirt matching help",
+        "skirt for party",
+        "skirt for college",
+        "how to style skirt",
+        "cute skirt ideas"
+      ],
+      "responses": ["mini, midi, pleated, denim or wrap skirts work for different occasions."]
+    },
+    {
+      "tag": "shorts_recommendation",
+      "patterns": [
+        "shorts outfit ideas",
+        "best shorts style",
+        "how to style shorts",
+        "shorts for summer",
+        "shorts matching tips",
+        "shorts fashion",
+        "shorts suggestion",
+        "shorts and tshirt combo"
+      ],
+      "responses": ["denim shorts, cotton shorts, cargo shorts and athletic shorts suit casual outings."]
+    },
+    {
+      "tag": "trousers_recommendation",
+      "patterns": [
+        "trousers outfit ideas",
+        "best trousers",
+        "trouser style tips",
+        "formal trousers",
+        "trouser matching",
+        "pants for office",
+        "which trousers to wear",
+        "pant suggestions"
+      ],
+      "responses": ["choose chinos, formal pants, cargo pants or slim-fit trousers depending on the event."]
+    },
+    {
+      "tag": "ethnic_men",
+      "patterns": [
+        "men ethnic wear",
+        "kurta for men",
+        "sherwani ideas",
+        "men traditional outfit",
+        "men festival wear",
+        "ethnic look men",
+        "indian wear men",
+        "mens kurta suggestions"
+      ],
+      "responses": ["men can go for kurta-pyjama, sherwani, nehru jacket or ethnic sets for festivals & weddings."]
+    },
+    {
+      "tag": "ethnic_women",
+      "patterns": [
+        "women ethnic wear",
+        "lehenga ideas",
+        "women traditional outfit",
+        "ethnic looks",
+        "indian wear women",
+        "female festive outfit",
+        "saree or lehenga",
+        "women kurti styling"
+      ],
+      "responses": ["women can choose sarees, lehengas, salwar suits, shararas or indo-western outfits."]
+    },
+    {
+      "tag": "winter_layering",
+      "patterns": [
+        "how to layer in winter",
+        "winter layering tips",
+        "layering clothes",
+        "multiple layers winter",
+        "how to wear layers",
+        "warm layering ideas",
+        "layering fashion",
+        "winter outfit layering"
+      ],
+      "responses": ["use base thermal layer, sweater, hoodie, jacket, scarf and boots for layered winter outfits."]
+    },
+    {
+      "tag": "color_match_blue",
+      "patterns": [
+        "which color matches with blue?",
+        "best match for blue jeans?",
+        "blue top ko kaun sa color suit karega?",
+        "recommend colors with navy blue",
+        "blue outfit combination?",
+        "what to wear with sky blue?",
+        "blue ke sath kya jamega?",
+        "blue dress combination ideas",
+        "colors that pair with royal blue",
+        "blue color ka best combo?"
+      ],
+      "responses": [
+        "Blue pairs great with white, beige, black, grey, mustard, and pastel shades. Want event-based suggestions?"
+      ]
+    },
+    {
+      "tag": "color_match_black",
+      "patterns": [
+        "black ke sath kaunsa color perfect hai?",
+        "best match for black shirt?",
+        "black outfit combination?",
+        "black dress ke sath kya pehnu?",
+        "colors matching with black?",
+        "black hoodie combination?",
+        "black color ka best combo?",
+        "black trousers ke sath kya jamega?",
+        "stylish black matching ideas?",
+        "black ke sath bright color?"
+      ],
+      "responses": [
+        "Black goes with literally everything—white, red, grey, olive, beige, and bright colors. Want me to match by occasion?"
+      ]
+    },
+    {
+      "tag": "color_match_white",
+      "patterns": [
+        "white shirt combination?",
+        "white ke sath kaunsa color acha lagta hai?",
+        "best match for white jeans",
+        "white outfit ideas?",
+        "white dress ke sath kya pehnu?",
+        "neutral combination for white?",
+        "white ke sath dark color?",
+        "white top matching color",
+        "white outfit ke options",
+        "colors that suit white"
+      ],
+      "responses": [
+        "White looks best with black, navy blue, beige, pastel colors and denim. Want casual or formal suggestions?"
+      ]
+    },
+    {
+      "tag": "event_marriage_outfit",
+      "patterns": [
+        "marriage me kya pehnu?",
+        "wedding outfit suggestions?",
+        "shaadi ke liye dress ideas",
+        "wedding ke liye men outfit?",
+        "women wedding look ideas",
+        "marriage event styling?",
+        "indian wedding wear suggestion",
+        "shaadi look recommend karo",
+        "sangeet/shadi me kya pehnu?",
+        "best outfit for wedding?"
+      ],
+      "responses": [
+        "For weddings, go with ethnic styles—lehenga, sherwani, kurta set, saree, or indo-western. Want budget-based options?"
+      ]
+    },
+    {
+      "tag": "event_party_outfit",
+      "patterns": [
+        "party me kya pehnu?",
+        "party wear ideas?",
+        "club outfit suggestion?",
+        "night party outfit?",
+        "party look recommend",
+        "birthday party dress ideas",
+        "men party outfit?",
+        "women stylish party wear?",
+        "party ke liye fashion tips",
+        "party dressing guide"
+      ],
+      "responses": [
+        "For parties, choose stylish fits—bodycon dress, blazer & jeans, sequins, leather jacket, or printed shirts. Want color-based ideas?"
+      ]
+    },
+    {
+      "tag": "event_college_outfit",
+      "patterns": [
+        "college me kya pehnu?",
+        "college outfit ideas",
+        "best casual look for college",
+        "college dressing tips",
+        "simple college outfit?",
+        "college ke liye hoodie or shirt?",
+        "college boys outfit?",
+        "college girls look suggestions",
+        "daily college wear guide",
+        "comfortable college outfit"
+      ],
+      "responses": [
+        "Go for casual and comfortable—jeans, oversized tees, hoodies, sneakers, kurti-jeans or casual shirts. Want budget-friendly combos?"
+      ]
+    },
+    {
+      "tag": "event_office_outfit",
+      "patterns": [
+        "office me kya pehnu?",
+        "office outfit ideas",
+        "formal dressing tips",
+        "office dress code suggestions",
+        "men office look?",
+        "women office wear?",
+        "best formal outfit?",
+        "corporate attire ideas",
+        "office ke liye kaise kapde pehne?",
+        "office appropriate outfit"
+      ],
+      "responses": [
+        "Choose formal & smart—shirts, trousers, blazer, pencil skirt, formal saree or smart tops. Want casual Friday looks too?"
+      ]
+    },
+    {
+      "tag": "event_gym_outfit",
+      "patterns": [
+        "gym me kya pehnu?",
+        "gym outfit ideas",
+        "best gym wear?",
+        "workout clothing suggestions",
+        "gym ke liye kapde?",
+        "comfortable workout wear?",
+        "men gym outfit?",
+        "women gym wear options",
+        "exercise outfit tips",
+        "training clothes suggestion"
+      ],
+      "responses": [
+        "Gym wear should be flexible—dry-fit tees, shorts, leggings, sports bras, track pants, and sneakers. Want brand-based picks?"
+      ]
+    },
+    {
+      "tag": "event_beach_outfit",
+      "patterns": [
+        "beach outfit ideas",
+        "beach me kya pehnu?",
+        "goa outfit suggestions",
+        "beach look men?",
+        "beach look women?",
+        "summer beach dress?",
+        "beach fashion tips",
+        "goa travel outfit",
+        "beach ke liye kapde?",
+        "beach wear options"
+      ],
+      "responses": [
+        "Go for cool & comfy—shorts, floral shirts, crop tops, kaftans, tank tops, and beach sandals. Want color combos too?"
+      ]
+    },
+    {
+      "tag": "event_winter_outfit",
+      "patterns": [
+        "winter me kya pehnu?",
+        "winter outfit ideas",
+        "cold weather dress suggestions",
+        "winter outfit men",
+        "winter outfit women",
+        "winter styled look?",
+        "sweater combination?",
+        "winter jacket outfit?",
+        "warm clothes suggestion",
+        "winter fashion guide"
+      ],
+      "responses": [
+        "Layer up with hoodies, sweaters, jackets, thermals, boots, and woolen accessories. Want minimal or heavy winter look?"
+      ]
+    },
+    {
+      "tag": "size_help_v2",
+      "patterns": [
+        "size kaise choose karu?",
+        "size help needed",
+        "how to know my size?",
+        "which size should I buy?",
+        "perfect size kaise milega?",
+        "size guide?",
+        "my size is confusing",
+        "size suggestion?",
+        "fit kaise check karu?",
+        "small ya medium?"
+      ],
+      "responses": [
+        "Use our size guide for accurate measurements. Tell me your height/weight for better suggestions!"
+      ]
+    },
+    {
+      "tag": "size_shoes",
+      "patterns": [
+        "shoe size guide?",
+        "shoes ka size kaise pata chale?",
+        "which shoe size is right?",
+        "my foot size?",
+        "foot length measurement?",
+        "shoes ka perfect size?",
+        "men shoe size?",
+        "women shoe size?",
+        "shoe fitting issue",
+        "shoe size confusion"
+      ],
+      "responses": [
+        "Measure foot length in cm and match with our shoe size chart. Want me to guide you step-by-step?"
+      ]
+    },
+    {
+      "tag": "size_tshirt",
+      "patterns": [
+        "t shirt size kaise choose karu?",
+        "tshirt fit guide?",
+        "oversized or regular?",
+        "which size tshirt?",
+        "medium or large?",
+        "my tshirt size?",
+        "tshirt fitting tips",
+        "tight or loose fit?",
+        "tshirt ka size?",
+        "perfect tshirt size"
+      ],
+      "responses": [
+        "For T-shirts: choose regular for fitted look, oversized for trendy loose style. Give me height/weight for exact size."
+      ]
+    },
+    {
+      "tag": "size_jeans",
+      "patterns": [
+        "jeans ka size?",
+        "jeans ki fitting?",
+        "waist size kaise check?",
+        "jeans 30 ya 32?",
+        "jeans size confusion",
+        "best jeans fit?",
+        "skinny or regular jeans?",
+        "jeans length kaise choose?",
+        "jeans measurement guide",
+        "perfect denim fit"
+      ],
+      "responses": [
+        "Measure waist & length in inches. Skinny, slim, or straight—choose based on comfort and style."
+      ]
+    },
+    {
+      "tag": "cloth_material_info",
+      "patterns": [
+        "cloth material kya hai?",
+        "fabric details?",
+        "ye kapda kis material ka hai?",
+        "cotton or polyester?",
+        "fabric quality kaise pata chale?",
+        "material type?",
+        "kapde ki quality?",
+        "fabric difference?",
+        "cloth material guide",
+        "which fabric is best?"
+      ],
+      "responses": [
+        "We provide fabric details for every item—cotton, polyester, denim, wool, rayon & more. Want comfort or durability?"
+      ]
+    },
+    {
+      "tag": "wash_care",
+      "patterns": [
+        "wash kaise karu?",
+        "washing instructions?",
+        "is cloth machine washable?",
+        "kapda kaise dhoye?",
+        "wash care guide",
+        "can I iron this?",
+        "dry clean only?",
+        "washing tips?",
+        "fabric wash method?",
+        "kapda bigad jayega?"
+      ],
+      "responses": [
+        "Check the wash care label—some require gentle wash, cold water or dry clean. Want instructions for your fabric?"
+      ]
+    },
+    {
+      "tag": "return_policy_v2",
+      "patterns": [
+        "return policy kya hai?",
+        "can I return this?",
+        "return available?",
+        "exchange hoga?",
+        "refund kab milega?",
+        "product return process",
+        "return rules?",
+        "how to return?",
+        "wrong product return?",
+        "return karna hai"
+      ],
+      "responses": [
+        "Yes, we have easy returns! Most items can be returned within 7 days. Want me to start a return request?"
+      ]
+    },
+    {
+      "tag": "delivery_info",
+      "patterns": [
+        "delivery kab milegi?",
+        "shipping details?",
+        "order kab aayega?",
+        "delivery time?",
+        "fast delivery?",
+        "shipping charges?",
+        "free delivery?",
+        "order tracking?",
+        "package status?",
+        "delivery update"
+      ],
+      "responses": [
+        "Delivery takes 3–6 days depending on your location. Want to track your order?"
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "mera order kaha hai?",
+        "order status check",
+        "order track karna hai",
+        "order update?",
+        "parcel kab aayega?",
+        "order progress?",
+        "track my package",
+        "order kaha tak aaya?",
+        "order shipped?",
+        "where is my product?"
+      ],
+      "responses": [
+        "Sure! Provide your order ID and I’ll check the live status for you."
+      ]
+    },
+    {
+      "tag": "offers_discounts",
+      "patterns": [
+        "offers batao",
+        "koi discount hai?",
+        "sale kab lagegi?",
+        "promo code?",
+        "coupon available?",
+        "discounted items?",
+        "special offers?",
+        "price drop?",
+        "deal of the day?",
+        "cheap products?"
+      ],
+      "responses": [
+        "Great news! Many items are on discount right now. Want me to show the best deals?"
+      ]
+    },
+    {
+      "tag": "mens_casual_wear",
+      "patterns": [
+        "men casual outfit?",
+        "mens casual look ideas",
+        "casual wear for boys",
+        "best casual clothing for men",
+        "daily casual wear men",
+        "simple casual men outfit",
+        "men ka casual style",
+        "men streetwear ideas",
+        "cool casual men clothes",
+        "casual fashion tips for men"
+      ],
+      "responses": [
+        "Men casual wear includes jeans, t-shirts, hoodies, chinos, polos, and sneakers. Want color combinations?"
+      ]
+    },
+    {
+      "tag": "mens_formal_wear",
+      "patterns": [
+        "men formal outfit?",
+        "formal wear for office men",
+        "men suit suggestions",
+        "men formal shirt ideas",
+        "formal dressing for boys",
+        "corporate men outfit",
+        "blazer look for men",
+        "office formal men clothes",
+        "men workwear ideas",
+        "formal fashion men"
+      ],
+      "responses": [
+        "Men formal wear includes shirts, trousers, suits, blazers, and leather shoes. Want modern or classic style?"
+      ]
+    },
+    {
+      "tag": "mens_party_wear",
+      "patterns": [
+        "men party outfit?",
+        "party wear ideas men",
+        "birthday men outfit",
+        "club look for men",
+        "stylish party wear for boys",
+        "men night party dress",
+        "men fashionable party clothes",
+        "blazer party style",
+        "printed shirt party look",
+        "party fashion men"
+      ],
+      "responses": [
+        "Men party wear includes printed shirts, blazers, ripped jeans, leather jackets, and boots."
+      ]
+    },
+    {
+      "tag": "mens_winter_collection",
+      "patterns": [
+        "men winter wear?",
+        "winter outfit boys",
+        "men warm clothing",
+        "winter jacket men's",
+        "men sweaters available?",
+        "cold weather men outfits",
+        "men winter collection",
+        "hoodie men winter",
+        "winter fashion men",
+        "winter clothes men"
+      ],
+      "responses": [
+        "Men winter wear includes jackets, sweaters, hoodies, thermals, and boots. Want layered outfit tips?"
+      ]
+    },
+    {
+      "tag": "mens_summer_collection",
+      "patterns": [
+        "men summer wear?",
+        "summer clothes for boys",
+        "men hot weather outfit",
+        "light clothes men",
+        "summer t-shirt men",
+        "summer look for men",
+        "men breathable outfits",
+        "cotton clothes men",
+        "men summer collection",
+        "tropical outfits men"
+      ],
+      "responses": [
+        "Men summer wear includes cotton tees, shorts, linen shirts, light jeans, and sandals."
+      ]
+    },
+    {
+      "tag": "women_casual_wear",
+      "patterns": [
+        "women casual wear?",
+        "girls casual outfit ideas",
+        "daily casual look women",
+        "simple women outfit",
+        "girls streetwear ideas",
+        "women ka casual style",
+        "women casual clothing",
+        "ladies casual fashion",
+        "cool casual clothes women",
+        "trendy casual wear"
+      ],
+      "responses": [
+        "Women casual wear includes jeans, tees, tops, tank tops, skirts, and sneakers."
+      ]
+    },
+    {
+      "tag": "women_formal_wear",
+      "patterns": [
+        "women formal outfit?",
+        "office wear for ladies",
+        "women corporate attire",
+        "formal dressing girls",
+        "women blazer outfit",
+        "formal tops for women",
+        "women formal pants",
+        "women office style",
+        "professional women clothes",
+        "office look ladies"
+      ],
+      "responses": [
+        "Women formal wear includes blazers, trousers, shirts, pencil skirts, and elegant tops."
+      ]
+    },
+    {
+      "tag": "women_party_wear",
+      "patterns": [
+        "women party outfit?",
+        "girls night dress ideas",
+        "party wear for ladies",
+        "club look women",
+        "girls birthday look",
+        "women fancy dress",
+        "party wear gowns?",
+        "stylish party dresses women",
+        "women glitter dress",
+        "party fashion girls"
+      ],
+      "responses": [
+        "Women party wear includes gowns, bodycon dresses, sequins, shimmer tops, and heels."
+      ]
+    },
+    {
+      "tag": "women_ethnic_wear",
+      "patterns": [
+        "women ethnic wear?",
+        "girls traditional outfit",
+        "lehenga options?",
+        "ethnic suit ideas",
+        "ethnic wear for wedding",
+        "kurti collection",
+        "saree suggestions",
+        "indian wear for girls",
+        "women festive outfit",
+        "traditional dress ideas"
+      ],
+      "responses": [
+        "Women ethnic wear includes sarees, lehengas, salwar suits, shararas, and Indo-western sets."
+      ]
+    },
+    {
+      "tag": "kids_wear_boys",
+      "patterns": [
+        "kids boys clothes?",
+        "boys outfit ideas?",
+        "children wear boys",
+        "kids fashion boys",
+        "baby boy dress?",
+        "boys casual clothing kids",
+        "boys party wear kids",
+        "small boy outfits",
+        "kids boys collection",
+        "toddler boys fashion"
+      ],
+      "responses": [
+        "Boys kids wear includes shorts, tees, shirts, jeans, sweaters, and mini ethnic outfits."
+      ]
+    },
+    {
+      "tag": "kids_wear_girls",
+      "patterns": [
+        "kids girls clothes?",
+        "baby girl dress?",
+        "girls kids outfit ideas",
+        "children fashion girls",
+        "little girls frocks",
+        "girls party wear kids",
+        "girl casual wear kids",
+        "kids girls clothing",
+        "small girl outfits",
+        "toddler girls dresses"
+      ],
+      "responses": [
+        "Girls kids wear includes frocks, skirts, tops, jeans, ethnic suits, and party dresses."
+      ]
+    },
+    {
+      "tag": "track_orders",
+      "patterns": [
+        "track my order",
+        "order where?",
+        "order kaha tak pahuncha?",
+        "track package",
+        "shipment tracking",
+        "track delivery",
+        "order ka status",
+        "mera parcel kaha hai?",
+        "order details?",
+        "track now"
+      ],
+      "responses": [
+        "Please share your order ID and I will track it for you."
+      ]
+    },
+    {
+      "tag": "cancel_order_v2",
+      "patterns": [
+        "cancel my order",
+        "order cancel karna hai",
+        "how to cancel order?",
+        "can I cancel this?",
+        "cancel request?",
+        "cancel order option?",
+        "order cancel guide",
+        "wrong order cancel",
+        "cancel order now",
+        "order ko cancel kaise kare?"
+      ],
+      "responses": [
+        "Sure! Share your order ID, and I’ll start the cancellation process."
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "payment options?",
+        "kaise payment kare?",
+        "COD available?",
+        "online payment?",
+        "upi accepted?",
+        "credit card allowed?",
+        "debit card payments?",
+        "cash on delivery?",
+        "payment methods list",
+        "how to pay?"
+      ],
+      "responses": [
+        "We support UPI, COD, credit/debit cards, wallets, and net banking."
+      ]
+    },
+    {
+      "tag": "refund_policy_v2",
+      "patterns": [
+        "refund kab milega?",
+        "refund policy?",
+        "money back kab?",
+        "refund process?",
+        "refund available?",
+        "how long refund takes?",
+        "refund issue?",
+        "refund details?",
+        "return money?",
+        "refund tracking?"
+      ],
+      "responses": [
+        "Refunds are processed within 3–7 days after pickup. Want to check your refund status?"
+      ]
+    },
+    {
+      "tag": "request_discount",
+      "patterns": [
+        "can I get a discount?",
+        "any coupon available?",
+        "is there any promo code?",
+        "give me discount please",
+        "any running offers?",
+        "do you have any sale?",
+        "any price drop?",
+        "how to apply discount?"
+      ],
+      "responses": [
+        "You can check the offers section — discounts are updated regularly!"
+      ]
+    },
+    {
+      "tag": "track_order_v2",
+      "patterns": [
+        "how to track my order?",
+        "track my parcel",
+        "where is my delivery?",
+        "order tracking please",
+        "check my shipping status",
+        "track order id",
+        "how to see order status?",
+        "tell me delivery update"
+      ],
+      "responses": [
+        "You can track your order using your order ID in the 'My Orders' section."
+      ]
+    },
+    {
+      "tag": "return_policy_v3",
+      "patterns": [
+        "what is your return policy?",
+        "can I return this product?",
+        "how many days return?",
+        "is return available?",
+        "return rules?",
+        "can I exchange?",
+        "return and refund details",
+        "how to request return?"
+      ],
+      "responses": [
+        "Our return policy allows easy returns within the mentioned time period on your product page."
+      ]
+    },
+    {
+      "tag": "refund_status",
+      "patterns": [
+        "where is my refund?",
+        "refund not received",
+        "how long for refund?",
+        "check my refund status",
+        "refund issue",
+        "when will I get my money back?",
+        "refund tracking",
+        "refund pending"
+      ],
+      "responses": [
+        "Refunds are usually processed within 3–7 working days after approval."
+      ]
+    },
+    {
+      "tag": "exchange_request",
+      "patterns": [
+        "I want to exchange my order",
+        "can I replace this?",
+        "how to exchange product?",
+        "exchange available?",
+        "exchange rules",
+        "want different size",
+        "need to change color",
+        "exchange process?"
+      ],
+      "responses": [
+        "You can request an exchange directly through the 'My Orders' section."
+      ]
+    },
+    {
+      "tag": "cancel_order_v3",
+      "patterns": [
+        "cancel my order",
+        "how to cancel order?",
+        "I want to stop my order",
+        "order cancellation",
+        "can I cancel now?",
+        "order stop please",
+        "cancel request",
+        "how to undo my order?"
+      ],
+      "responses": [
+        "You can cancel your order until it is shipped. Visit 'My Orders' to cancel."
+      ]
+    },
+    {
+      "tag": "delivery_time",
+      "patterns": [
+        "when will my product arrive?",
+        "delivery time?",
+        "how long for delivery?",
+        "expected delivery date?",
+        "when do you deliver?",
+        "shipping duration?",
+        "delivery timeline?",
+        "how many days for delivery?"
+      ],
+      "responses": [
+        "Delivery time depends on your location and product type. It is shown during checkout."
+      ]
+    },
+    {
+      "tag": "cod_available",
+      "patterns": [
+        "is cash on delivery available?",
+        "cod option?",
+        "can I pay in cash?",
+        "do you offer cod?",
+        "pay when delivered?",
+        "cash payment possible?",
+        "cod allowed?",
+        "cod service?"
+      ],
+      "responses": [
+        "Yes, COD is available on most products depending on your pin code."
+      ]
+    },
+    {
+      "tag": "payment_failed",
+      "patterns": [
+        "my payment failed",
+        "transaction not working",
+        "payment error",
+        "money deducted but order not placed",
+        "payment issue",
+        "transaction failed",
+        "checkout error",
+        "order not confirmed after payment"
+      ],
+      "responses": [
+        "Don't worry! If the amount was deducted, it will be auto-refunded within 2–5 days."
+      ]
+    },
+    {
+      "tag": "shipping_charges",
+      "patterns": [
+        "is shipping free?",
+        "delivery charges?",
+        "how much is shipping?",
+        "any shipping fee?",
+        "what are delivery costs?",
+        "shipping price?",
+        "free delivery?",
+        "charges for delivery"
+      ],
+      "responses": [
+        "Shipping charges depend on your location and product. Many orders qualify for free delivery!"
+      ]
+    },
+    {
+      "tag": "wishlist_feature",
+      "patterns": [
+        "how to add to wishlist?",
+        "save item for later",
+        "wishlist option?",
+        "where is wishlist?",
+        "add this to favorite",
+        "mark this for later",
+        "save product",
+        "wishlist help"
+      ],
+      "responses": [
+        "You can add any product to your wishlist using the heart ❤️ icon."
+      ]
+    },
+    {
+      "tag": "gift_wrap",
+      "patterns": [
+        "do you offer gift wrap?",
+        "can you wrap this as gift?",
+        "gift packaging available?",
+        "gift wrap option?",
+        "send as gift?",
+        "gift pack product?",
+        "gift wrap charges?",
+        "gift message add?"
+      ],
+      "responses": [
+        "Yes, gift wrap options are available during checkout!"
+      ]
+    },
+    {
+      "tag": "bulk_order",
+      "patterns": [
+        "can I place bulk order?",
+        "wholesale available?",
+        "bulk discount?",
+        "order in large quantity",
+        "corporate order?",
+        "buy in bulk",
+        "bulk purchase help",
+        "do you offer wholesale?"
+      ],
+      "responses": [
+        "For bulk orders, contact support — they will assist with pricing and availability."
+      ]
+    },
+    {
+      "tag": "new_arrivals",
+      "patterns": [
+        "show me new arrivals",
+        "latest products?",
+        "what's new?",
+        "new clothing?",
+        "recently added?",
+        "fresh stock?",
+        "new collection?",
+        "new fashion items?"
+      ],
+      "responses": [
+        "You can explore all newest items in our 'New Arrivals' section!"
+      ]
+    },
+    {
+      "tag": "best_sellers",
+      "patterns": [
+        "show best sellers",
+        "most popular items",
+        "top selling products",
+        "trending clothing",
+        "best products?",
+        "hot selling now?",
+        "popular items list",
+        "famous products?"
+      ],
+      "responses": [
+        "Our Best Sellers section shows the trending products loved by customers!"
+      ]
+    },
+    {
+      "tag": "filter_by_brand",
+      "patterns": [
+        "show me clothes from puma",
+        "asos products please",
+        "adidas collection?",
+        "any boohoo items?",
+        "h&m clothing?",
+        "depop outfits?",
+        "brand wise filter?",
+        "show only nike clothes",
+        "filter using brand name",
+        "collection of zara?"
+      ],
+      "responses": [
+        "Sure! You can filter clothing by brand using the brand filter option."
+      ]
+    },
+    {
+      "tag": "filter_by_gender",
+      "patterns": [
+        "women clothes only",
+        "men fashion please",
+        "show me girls dressing",
+        "boys outfits?",
+        "female clothing filter",
+        "male clothing products",
+        "items for women?",
+        "items for men?",
+        "gender-wise filter?",
+        "show men section?"
+      ],
+      "responses": [
+        "You can select Men or Women category to view the respective products."
+      ]
+    },
+    {
+      "tag": "filter_by_price",
+      "patterns": [
+        "show me cheap clothes",
+        "low price items",
+        "budget friendly fashion",
+        "clothes under 500",
+        "filter price low to high",
+        "filter high to low",
+        "show expensive items",
+        "price range filter?",
+        "clothes under 1000?",
+        "products above 2000?"
+      ],
+      "responses": [
+        "Use the price filter slider to view clothing within your budget."
+      ]
+    },
+    {
+      "tag": "filter_by_color",
+      "patterns": [
+        "show me black clothes",
+        "any red t shirts?",
+        "blue jeans?",
+        "filter clothes by color",
+        "white outfit?",
+        "green dress?",
+        "color wise clothes?",
+        "brown jackets?",
+        "pink tops available?",
+        "yellow fashion wear?"
+      ],
+      "responses": [
+        "You can filter clothes by color using the color filter option."
+      ]
+    },
+    {
+      "tag": "filter_by_size",
+      "patterns": [
+        "show only medium size",
+        "any small size available?",
+        "large size clothing?",
+        "xl outfits?",
+        "xxl dress?",
+        "filter by size",
+        "need big size",
+        "plus size clothing?",
+        "kids size clothes?",
+        "is size m available?"
+      ],
+      "responses": [
+        "Use the size filter to see clothes available in your preferred size."
+      ]
+    },
+    {
+      "tag": "college_outfit_suggestions",
+      "patterns": [
+        "what should I wear to college?",
+        "college dress ideas?",
+        "outfit for campus?",
+        "casual college look?",
+        "clothes for college students?",
+        "what to wear for lectures?",
+        "simple college outfit?",
+        "any styling tips for college?",
+        "daily college wear?",
+        "college fashion?"
+      ],
+      "responses": [
+        "For college, go for casual and comfy fits — jeans, tees, sneakers, and casual jackets!"
+      ]
+    },
+    {
+      "tag": "office_outfit_suggestions",
+      "patterns": [
+        "what to wear in office?",
+        "formal office outfit?",
+        "office dress ideas?",
+        "corporate clothing?",
+        "workplace style?",
+        "professional outfit tips?",
+        "best office wear?",
+        "smart formal look?",
+        "office shirts and trousers?",
+        "work fashion ideas?"
+      ],
+      "responses": [
+        "For office, choose formal shirts, trousers, blazers, pencil skirts, or formal dresses."
+      ]
+    },
+    {
+      "tag": "party_wear_suggestions",
+      "patterns": [
+        "party outfit ideas?",
+        "what to wear for party?",
+        "party dress suggestions",
+        "night event clothing?",
+        "club outfit?",
+        "party look?",
+        "dress for party night?",
+        "fashion for events?",
+        "party wear for girls?",
+        "party wear for boys?"
+      ],
+      "responses": [
+        "For parties, go for stylish outfits like sequins, bodycon dresses, suits, jackets, and bold colors."
+      ]
+    },
+    {
+      "tag": "wedding_outfit_suggestions",
+      "patterns": [
+        "what to wear at wedding?",
+        "wedding dress ideas?",
+        "outfit for marriage ceremony?",
+        "wedding guest outfit?",
+        "marriage function clothes",
+        "traditional wedding wear?",
+        "wedding outfit for men?",
+        "lehenga ideas?",
+        "sherwani options?",
+        "wedding ceremony clothes?"
+      ],
+      "responses": [
+        "For weddings, go for ethnic wear like lehengas, sarees, sherwanis, kurtas, and Indo-western outfits."
+      ]
+    },
+    {
+      "tag": "travel_outfit_suggestions",
+      "patterns": [
+        "what to wear for travel?",
+        "comfortable travel clothes?",
+        "airport look ideas?",
+        "travel outfit?",
+        "fashion for traveling",
+        "best travel wear?",
+        "comfortable journey outfit?",
+        "what clothes for long trip?",
+        "travel look suggestions",
+        "travel dressing tips"
+      ],
+      "responses": [
+        "For travel, choose comfortable joggers, hoodies, tees, sneakers, and breathable fabrics."
+      ]
+    },
+    {
+      "tag": "gym_outfit_suggestions",
+      "patterns": [
+        "gym clothes?",
+        "what to wear to gym?",
+        "best gym outfit?",
+        "fitness wear ideas",
+        "gym dress for men?",
+        "gym wear for women?",
+        "workout clothing?",
+        "active wear suggestions?",
+        "sports clothes?",
+        "gym fashion?"
+      ],
+      "responses": [
+        "Choose moisture-wicking clothes, gym shorts, sports bras, leggings, tank tops, and supportive shoes."
+      ]
+    },
+    {
+      "tag": "rainy_season_clothing",
+      "patterns": [
+        "what to wear in rainy season?",
+        "monsoon outfit?",
+        "rain friendly clothes?",
+        "rainy season fashion",
+        "quick drying clothes?",
+        "raincoat options?",
+        "waterproof clothing?",
+        "rainy day outfit?",
+        "monsoon wear?",
+        "rainproof jackets?"
+      ],
+      "responses": [
+        "For rainy season, go for quick-dry fabrics, waterproof jackets, crocs, and lightweight clothes."
+      ]
+    },
+    {
+      "tag": "winter_clothing",
+      "patterns": [
+        "best winter outfit?",
+        "cold season clothing?",
+        "winter jackets?",
+        "warm clothes?",
+        "winter fashion ideas?",
+        "sweaters and hoodies?",
+        "thermal wear?",
+        "winter outfit tips?",
+        "what to wear in winter?",
+        "warmest jackets?"
+      ],
+      "responses": [
+        "For winter, layer using sweaters, hoodies, jackets, thermals, and boots."
+      ]
+    },
+    {
+      "tag": "summer_clothing",
+      "patterns": [
+        "summer outfits?",
+        "what to wear in hot weather?",
+        "summer dress ideas",
+        "best clothes for summer",
+        "hot season clothing",
+        "light cotton wear?",
+        "cool summer fashion",
+        "beach outfit?",
+        "summer style tips",
+        "breathable fabrics?"
+      ],
+      "responses": [
+        "For summer, choose lightweight cotton, linen shirts, shorts, flowy dresses, and breathable outfits."
+      ]
+    },
+    {
+      "tag": "festival_outfits",
+      "patterns": [
+        "what to wear for festivals?",
+        "festival outfit ideas?",
+        "ethnic festival wear?",
+        "festival clothing suggestions",
+        "best festival dress?",
+        "navratri outfit?",
+        "diwali dress ideas?",
+        "eid outfit?",
+        "holi clothing?",
+        "festive fashion?"
+      ],
+      "responses": [
+        "For festivals, choose ethnic wear like kurtas, lehengas, dhotis, sarees, and colorful traditional outfits."
+      ]
+    },
+    {
+      "tag": "sportswear_suggestions",
+      "patterns": [
+        "show me sportswear",
+        "sports clothes?",
+        "athlete outfit ideas",
+        "what to wear for running?",
+        "sports t shirts?",
+        "activewear?",
+        "sports shorts available?",
+        "best outfit for training",
+        "sporty look?",
+        "athletic clothing?"
+      ],
+      "responses": [
+        "You can explore our Sportswear section for active and performance clothing!"
+      ]
+    },
+    {
+      "tag": "nightwear_suggestions",
+      "patterns": [
+        "show me nightwear",
+        "sleepwear options?",
+        "night dress ideas",
+        "comfortable sleeping clothes?",
+        "pajamas available?",
+        "night suit?",
+        "bedtime clothing?",
+        "night outfit suggestions",
+        "nightwear for women",
+        "nightwear for men"
+      ],
+      "responses": [
+        "Check our Nightwear collection for comfy pajamas, night suits, and sleepwear sets!"
+      ]
+    },
+    {
+      "tag": "footwear_suggestions",
+      "patterns": [
+        "show me footwear",
+        "shoes available?",
+        "footwear options?",
+        "best shoes for men?",
+        "heels available?",
+        "sports shoes?",
+        "casual shoes for girls",
+        "boots suggestion?",
+        "sandals available?",
+        "what shoes look good?"
+      ],
+      "responses": [
+        "You can explore various footwear including sneakers, sandals, heels, and boots!"
+      ]
+    },
+    {
+      "tag": "bag_suggestions",
+      "patterns": [
+        "show me bags",
+        "any backpacks?",
+        "handbags available?",
+        "tote bags?",
+        "college bags?",
+        "office bags?",
+        "slings available?",
+        "bag options?",
+        "travel bags?",
+        "fashion bags?"
+      ],
+      "responses": [
+        "We have backpacks, handbags, totes, slings, and more in the Bags category!"
+      ]
+    },
+    {
+      "tag": "jewelry_suggestions",
+      "patterns": [
+        "show me jewelry",
+        "earrings available?",
+        "necklace options?",
+        "bracelets?",
+        "fashion jewelry?",
+        "traditional jewelry?",
+        "jewelry for girls?",
+        "rings available?",
+        "accessories for women?",
+        "jewelry ideas?"
+      ],
+      "responses": [
+        "You can explore trendy and traditional jewelry in the Accessories section!"
+      ]
+    },
+    {
+      "tag": "watch_suggestions",
+      "patterns": [
+        "show me watches",
+        "any wrist watches?",
+        "smart watches?",
+        "men watches?",
+        "girls watch options?",
+        "analog watches?",
+        "best watches?",
+        "premium watches?",
+        "watch collection?",
+        "fashion watches?"
+      ],
+      "responses": [
+        "Check our Watches section for analog, digital, and smart watches!"
+      ]
+    },
+    {
+      "tag": "skin_tone_color_matching",
+      "patterns": [
+        "which color suits my skin tone?",
+        "best colors for dark skin?",
+        "which color for fair skin?",
+        "dress color suggestions for my complexion",
+        "suitable colors for wheatish skin?",
+        "what color will look good on me?",
+        "color matching with skin tone",
+        "which shades fit me?",
+        "suggest colors for my tone",
+        "skin tone fashion colors?"
+      ],
+      "responses": [
+        "Neutral, pastel, and earthy tones suit most skin tones — but bold colors also enhance your look!"
+      ]
+    },
+    {
+      "tag": "height_based_clothing",
+      "patterns": [
+        "best outfit for short height?",
+        "clothes for tall people?",
+        "what to wear if I am tall?",
+        "dress ideas for short person",
+        "height based clothes?",
+        "suitable outfit for tall girl?",
+        "fashion for short boys?",
+        "height style tips?",
+        "clothes that make me look taller",
+        "what suits tall boys?"
+      ],
+      "responses": [
+        "Vertical patterns, well-fitted clothes, and proper proportions work best based on height!"
+      ]
+    },
+    {
+      "tag": "body_shape_clothing",
+      "patterns": [
+        "best clothes for my body type",
+        "outfit for slim body?",
+        "dressing ideas for fat body?",
+        "pear shape outfit?",
+        "hourglass clothing?",
+        "apple body fashion?",
+        "rectangle shape clothes?",
+        "what suits my body?",
+        "body based outfit suggestions",
+        "clothes for bulky body?"
+      ],
+      "responses": [
+        "The best outfits depend on body shape — fitted, balanced, or flowy options enhance your look!"
+      ]
+    },
+    {
+      "tag": "material_inquiry",
+      "patterns": [
+        "what material is this?",
+        "fabric details?",
+        "cotton or polyester?",
+        "is this pure cotton?",
+        "what cloth material?",
+        "fabric quality?",
+        "material type?",
+        "is this stretchable?",
+        "soft fabric?",
+        "durable material?"
+      ],
+      "responses": [
+        "You can find fabric and material details under the product description section."
+      ]
+    },
+    {
+      "tag": "washing_instructions",
+      "patterns": [
+        "how to wash this cloth?",
+        "washing instructions?",
+        "machine wash or hand wash?",
+        "is this washable?",
+        "care instructions?",
+        "how to clean this?",
+        "washing method?",
+        "wash guide?",
+        "can I iron this?",
+        "laundry tips?"
+      ],
+      "responses": [
+        "Check the product’s wash care label for proper washing and ironing instructions."
+      ]
+    },
+    {
+      "tag": "product_authenticity",
+      "patterns": [
+        "is this product original?",
+        "is this authentic?",
+        "is this brand real?",
+        "are these clothes genuine?",
+        "fake or real?",
+        "authentic product check?",
+        "is this original brand?",
+        "are products verified?",
+        "brand authenticity?",
+        "real or copy?"
+      ],
+      "responses": [
+        "All products are sourced directly from verified sellers and authentic brands."
+      ]
+    },
+    {
+      "tag": "emi_options",
+      "patterns": [
+        "emi available?",
+        "can I pay in installments?",
+        "monthly payment option?",
+        "is there emi on clothes?",
+        "emi plan?",
+        "pay later option?",
+        "buy now pay later?",
+        "credit emi available?",
+        "installment option?",
+        "payment by emi?"
+      ],
+      "responses": [
+        "EMI and Pay-Later options are available on selected payment methods."
+      ]
+    },
+    {
+      "tag": "store_locator",
+      "patterns": [
+        "do you have physical store?",
+        "nearest store?",
+        "store location?",
+        "is there showroom?",
+        "offline shop?",
+        "where is your store?",
+        "any nearby branch?",
+        "local store available?",
+        "shop address?",
+        "offline shopping option?"
+      ],
+      "responses": [
+        "You can check nearby store availability in the Store Locator section."
+      ]
+    },
+    {
+      "tag": "order_help",
+      "patterns": [
+        "I need help with my order",
+        "order problem",
+        "order issue",
+        "order not showing",
+        "order stuck",
+        "help me with my purchase",
+        "facing issue with order",
+        "order not updating",
+        "support for my order",
+        "order help needed"
+      ],
+      "responses": [
+        "Sure! Tell me your order issue and I’ll help you step-by-step."
+      ]
+    },
+    {
+      "tag": "delivery_address_change",
+      "patterns": [
+        "how to change my delivery address?",
+        "can I edit shipping address?",
+        "update my address",
+        "wrong address added",
+        "change address please",
+        "edit location",
+        "delivery address mistake",
+        "update delivery details",
+        "change shipping address",
+        "address correction"
+      ],
+      "responses": [
+        "You can change your delivery address before the order is shipped from the 'My Orders' section."
+      ]
+    },
+    {
+      "tag": "cart_help",
+      "patterns": [
+        "my cart is empty",
+        "cart not showing items",
+        "how to add to cart?",
+        "cart problem",
+        "can't add product to cart",
+        "where is my cart?",
+        "items missing in cart",
+        "cart issue",
+        "add product to bag",
+        "help with cart"
+      ],
+      "responses": [
+        "You can add products to your cart using the Add to Cart button on each item."
+      ]
+    },
+    {
+      "tag": "wishlist_not_working",
+      "patterns": [
+        "wishlist not working",
+        "can't add to wishlist",
+        "wishlist error",
+        "wishlist items not showing",
+        "facing issue with wishlist",
+        "wishlist disappeared",
+        "why wishlist empty?",
+        "add to wishlist not responding",
+        "wishlist bug",
+        "wishlist help"
+      ],
+      "responses": [
+        "Try refreshing or logging in again. Wishlist requires an active account."
+      ]
+    },
+    {
+      "tag": "order_confirmation",
+      "patterns": [
+        "did my order confirm?",
+        "order confirmation not received",
+        "no sms for order",
+        "no email for order",
+        "order placed or not?",
+        "order confirm status?",
+        "how to know if order placed?",
+        "order success check",
+        "order confirmation help",
+        "did payment go through?"
+      ],
+      "responses": [
+        "You will receive an SMS/Email once your order is successfully confirmed."
+      ]
+    },
+    {
+      "tag": "stock_inquiry",
+      "patterns": [
+        "is this item in stock?",
+        "out of stock why?",
+        "when will stock come?",
+        "restock this product",
+        "product not available",
+        "stock status?",
+        "is this size available?",
+        "any upcoming restock?",
+        "restocking date?",
+        "notify me when available"
+      ],
+      "responses": [
+        "If an item is out of stock, you can click 'Notify Me' to receive restock updates."
+      ]
+    },
+    {
+      "tag": "shipping_speed",
+      "patterns": [
+        "fastest delivery option?",
+        "can I get quick delivery?",
+        "express shipping?",
+        "1 day delivery?",
+        "same day delivery?",
+        "do you provide fast shipping?",
+        "urgent delivery needed",
+        "speedy delivery?",
+        "fast shipping charges?",
+        "quickest delivery?"
+      ],
+      "responses": [
+        "Express delivery is available on selected products based on your location."
+      ]
+    },
+    {
+      "tag": "international_shipping",
+      "patterns": [
+        "do you ship internationally?",
+        "worldwide shipping?",
+        "can you deliver outside india?",
+        "international delivery?",
+        "global shipping option?",
+        "ship to other countries?",
+        "delivery outside my country?",
+        "foreign shipping?",
+        "can I buy from abroad?",
+        "international order?"
+      ],
+      "responses": [
+        "International shipping availability depends on the product and location."
+      ]
+    },
+    {
+      "tag": "coupon_not_working",
+      "patterns": [
+        "coupon not working",
+        "promo code error",
+        "apply coupon issue",
+        "why coupon invalid?",
+        "discount code not applying",
+        "coupon failure",
+        "offer code not working",
+        "invalid coupon message",
+        "apply promo code help",
+        "coupon rejected"
+      ],
+      "responses": [
+        "The coupon may be expired or not applicable to your cart items. Please check terms."
+      ]
+    },
+    {
+      "tag": "membership_info",
+      "patterns": [
+        "do you have membership?",
+        "how to get membership?",
+        "vip program?",
+        "premium user benefits?",
+        "membership details?",
+        "loyalty rewards?",
+        "membership cost?",
+        "how to join loyalty program?",
+        "member discounts?",
+        "vip benefits?"
+      ],
+      "responses": [
+        "Our membership program offers exclusive deals and early access to sales!"
+      ]
+    },
+    {
+      "tag": "gift_card",
+      "patterns": [
+        "do you have gift cards?",
+        "gift voucher?",
+        "how to buy gift card?",
+        "gift card balance?",
+        "redeem gift card?",
+        "gift card options?",
+        "gift card code?",
+        "digital gift card?",
+        "birthday gift card?",
+        "voucher purchase?"
+      ],
+      "responses": [
+        "You can buy digital and physical gift cards from the Gift Card section."
+      ]
+    },
+    {
+      "tag": "loyalty_points",
+      "patterns": [
+        "how to earn points?",
+        "loyalty points info?",
+        "reward points?",
+        "points not added",
+        "redeem my points",
+        "points balance?",
+        "how many points I have?",
+        "point system?",
+        "point rewards?",
+        "loyalty program details?"
+      ],
+      "responses": [
+        "You earn loyalty points on every purchase — redeemable during checkout!"
+      ]
+    },
+    {
+      "tag": "product_comparison",
+      "patterns": [
+        "compare these products",
+        "which is better?",
+        "product comparison?",
+        "compare items for me",
+        "side by side comparison",
+        "which product should I choose?",
+        "help me compare",
+        "difference between these two",
+        "compare specs",
+        "compare price and quality"
+      ],
+      "responses": [
+        "You can use the Compare feature to check price, material, ratings, and more."
+      ]
+    },
+    {
+      "tag": "order_limit",
+      "patterns": [
+        "why can't I order more?",
+        "is there quantity limit?",
+        "maximum order quantity?",
+        "limit on product purchase?",
+        "buy more than 10?",
+        "order restriction?",
+        "stock limit issue",
+        "product quantity blocked",
+        "can I buy more pieces?",
+        "order limit info?"
+      ],
+      "responses": [
+        "Some products have quantity limits due to high demand or stock restrictions."
+      ]
+    },
+    {
+      "tag": "delivery_delay",
+      "patterns": [
+        "why delivery delayed?",
+        "delivery taking too long",
+        "late delivery",
+        "my order delayed",
+        "delivery not arrived",
+        "still waiting for order",
+        "delay in shipping?",
+        "why order late?",
+        "delivery slow",
+        "expected delivery changed"
+      ],
+      "responses": [
+        "Delivery may be delayed due to logistics issues or weather conditions. We appreciate your patience!"
+      ]
+    },
+    {
+      "tag": "product_recommendation",
+      "patterns": [
+        "suggest me something to buy",
+        "best clothes for me?",
+        "recommend some outfits",
+        "what should I buy?",
+        "give me clothing suggestions",
+        "fashion recommendation?",
+        "clothes suggestion please",
+        "give me some options",
+        "recommend trending items",
+        "good outfits?"
+      ],
+      "responses": [
+        "Sure! Tell me your style, budget, and category — I’ll recommend the best options!"
+      ]
+    }
+  ]
+}

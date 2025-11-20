@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel='stylesheet' href='styles.css'>
+  <style>
+   #cartItems {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.cart-item {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.cart-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.cart-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: scale-down;
+    border-radius: 12px;
+}
+
+.cart-item h4 {
+    font-size: 16px;
+    margin: 10px 15px 5px;
+    font-weight: 600;
+}
+
+.cart-item p {
+    margin: 0 15px 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+.cart-item button {
+    margin: 0 15px 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #010000;
+    color: #fff;
+}
+
+.checkout-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+#totalPrice {
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background: #867e7e;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+
+  </style>
+</head>
+<body>
+  <div id='navbar'></div>
+  <h2 class='page-title'>Your Cart</h2>
+  <div id='cartItems'></div>
+  <div id="totalPrice"></div>
+  <button onclick="location.href='checkout.html'" class='checkout-btn'>Proceed to Checkout</button>
+
+  <script src='script.js'></script>
+ <script src="data.js"></script>
+<script src="script.js"></script>
+<script>
+  // Ensure products array is loaded
+  if(typeof products === 'undefined'){
+      console.error("products array is not defined! Make sure data.js is included before script.js");
+  }
+
+  // Show cart items on page load
+  function showCartProducts() {
+      const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+      const cartItems = document.getElementById('cartItems');
+      const totalPriceEl = document.getElementById('totalPrice');
+      cartItems.innerHTML = '';
+      let total = 0;
+
+      if(cart.length === 0){
+          cartItems.innerHTML = "<p>Your cart is empty.</p>";
+          totalPriceEl.textContent = '';
+          return;
+      }
+
+      cart.forEach(id => {
+          const product = products.find(p => p.id === id);
+          if(product){
+              total += parseInt(product.price.replace(/,/g, ""));
+
+
+              const div = document.createElement('div');
+              div.className = 'cart-item';
+
+              div.innerHTML = `
+                  <img src="${product.image_link}" alt="${product.name}">
+                  <div class="cart-item-details">
+                      <h4>${product.name}</h4>
+                       <p>${product.brand}</p>
+                      <p>${product.price}</p>
+                  </div>
+                  <button onclick="removeFromCart(${product.id})">Remove</button>
+              `;
+
+              cartItems.appendChild(div);
+          }
+      });
+
+      totalPriceEl.textContent = `Total: ${total}`;
+  }
+
+  function removeFromCart(id){
+      let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+      cart = cart.filter(pid => pid !== id);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      if(typeof updateCartCount === 'function') updateCartCount(); // update navbar cart count
+      showCartProducts();
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+      if(typeof loadNavbar === 'function') loadNavbar();
+      showCartProducts();
+  });
+</script>
+<script src="float-window.js"></script>
+</body>
+</html>

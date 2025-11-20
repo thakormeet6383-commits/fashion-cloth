@@ -1,0 +1,208 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>Brand's</title>
+        <link rel='stylesheet' href='styles.css'></head>
+<style>
+    /* GRID LAYOUT */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 22px;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px 0;
+}
+
+/* CATEGORY CARDS */
+.cat-box {
+    background: #ffffff;
+    padding: 25px 0;
+    text-align: center;
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    text-decoration: none;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HOVER EFFECT */
+.cat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+    border-color: #000;
+}
+
+/* PRESS / ACTIVE EFFECT */
+.cat-box:active {
+    transform: scale(0.96);
+}
+
+/* PAGE TITLE */
+.page-title {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    color: #111;
+}
+
+
+ #productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px; /* optional: center content on large screens */
+  margin: 0 auto;
+}
+.product {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: scale-down; /* fits full image without cropping */
+    border-radius: 12px;     /* rounded edges */
+}
+
+
+  .product h4 {
+    font-size: 16px;
+    margin: 10px 15px 5px;
+    font-weight: 600;
+  }
+
+  .product p {
+    margin: 0 15px 10px;
+    font-weight: 500;
+          color: #333;
+  }
+
+.product button {
+    margin: 0 15px 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .product button:first-of-type {
+    background-color: #000;
+    color: #fff;
+  }
+  /* Limit maximum of 4 columns */
+@media (min-width: 960px) {
+  #productList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* CARD ANIMATION */
+.product {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.4s ease forwards;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}.product:nth-child(1)  { animation-delay: 0ms; }
+.product:nth-child(2)  { animation-delay: 150ms; }
+.product:nth-child(3)  { animation-delay: 300ms; }
+.product:nth-child(4)  { animation-delay: 450ms; }
+.product:nth-child(5)  { animation-delay: 600ms; }
+.product:nth-child(6)  { animation-delay: 750ms; }
+.product:nth-child(7)  { animation-delay: 900ms; }
+.product:nth-child(8)  { animation-delay: 1050ms; }
+.product:nth-child(9)  { animation-delay: 1200ms; }
+.product:nth-child(10) { animation-delay: 1350ms; }
+.product:nth-child(11) { animation-delay: 1500ms; }
+.product:nth-child(12) { animation-delay: 1650ms; }
+.product:nth-child(13) { animation-delay: 1800ms; }
+.product:nth-child(14) { animation-delay: 1950ms; }
+.product:nth-child(15) { animation-delay: 2100ms; }
+.product:nth-child(16) { animation-delay: 2250ms; }
+.product:nth-child(17) { animation-delay: 2400ms; }
+.product:nth-child(18) { animation-delay: 2550ms; }
+.product:nth-child(19) { animation-delay: 2700ms; }
+.product:nth-child(20) { animation-delay: 2850ms; }
+.product:nth-child(21) { animation-delay: 3000ms; }
+.product:nth-child(22) { animation-delay: 3150ms; }
+.product:nth-child(23) { animation-delay: 3300ms; }
+.product:nth-child(24) { animation-delay: 3450ms; }
+.product:nth-child(25) { animation-delay: 3600ms; }
+.product:nth-child(26) { animation-delay: 3750ms; }
+.product:nth-child(27) { animation-delay: 3900ms; }
+.product:nth-child(28) { animation-delay: 4050ms; }
+.product:nth-child(29) { animation-delay: 4200ms; }
+.product:nth-child(30) { animation-delay: 4350ms; }
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+}
+
+/* Apply animation to all cat-boxes */
+.cat-box {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+
+
+    </style>
+
+
+
+
+
+<body><div id='navbar'></div><h2 class='page-title'>Brands</h2>
+<div class='categories-grid'>
+<a class="cat-box" onclick="loadBrandpProducts('Adidas')">Adidas</a>
+<a class="cat-box" onclick="loadBrandpProducts('ASOS')">ASOS</a>
+<a class="cat-box" onclick="loadBrandpProducts('Depop')">Depop</a>
+<a class="cat-box" onclick="loadBrandpProducts('boohoo')">boohoo</a>
+<a class="cat-box" onclick="loadBrandpProducts('H&M')">H&M</a>
+<a class="cat-box" onclick="loadBrandpProducts('PUMA')">PUMA</a>
+</div>
+<div id="productList">..</div>
+<script src='data.js'></script>
+<script src='script.js'></script>
+<script src="float-window.js"></script></body></html>

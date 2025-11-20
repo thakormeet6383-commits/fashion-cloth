@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home - July</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='styles.css'>
+
+<style>
+
+/* ---------------- LOAD + SCROLL ANIMATIONS ---------------- */
+
+.fade-up, .fade-left, .fade-right {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-left { transform: translateX(-40px); }
+.fade-right { transform: translateX(40px); }
+
+.show {
+    opacity: 1 !important;
+    transform: translate(0,0) !important;
+}
+
+/* LOAD ANIMATION for entire page */
+body {
+    animation: fadeInBody 0.7s ease-out;
+}
+@keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ----------------------------------------------------------- */
+
+.tabs span:active,
+.tabs span:focus,
+.tabs span:visited {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+
+/* HERO SECTION (MAIN TOP HERO) */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    height: 80vh;
+    background: #f9f9f9;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.hero-text button {
+    background: #000;
+    color: #fff;
+    padding: 13px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.hero img {
+    width: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* SECOND HERO (RENAMED TO .hero2) */
+.hero2 {
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.hero2-left img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.hero2-right {
+    margin-left: 60px;
+}
+
+.hero2-right h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.hero2-right p {
+    color: #555;
+    max-width: 420px;
+    margin: 15px 0;
+}
+
+.hero2-right button {
+    padding: 12px 25px;
+    border: none;
+    background: #111;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* TRENDING */
+.trending {
+    padding: 60px 8%;
+}
+
+.trending h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.tabs span {
+    margin-right: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tabs .active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+/* PRODUCT CARDS */
+.product-grid {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: scale-down;
+    border-radius: 12px;
+}
+
+.product-card h4 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #444;
+    margin: 0;
+}
+
+/* OFFER BANNERS */
+.offers {
+    padding: 50px 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.offer-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.offer-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.offer-card .text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.offer-card h3 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.offer-card p {
+    font-size: 16px;
+    margin: 5px 0 0;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+/* ------------------ RESPONSIVE FIXES ------------------ */
+
+/* Tablets */
+@media(max-width: 1024px) {
+    header {
+        padding: 16px 25px;
+    }
+
+    .hero {
+        padding: 60px 30px;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero img { width: 70%; margin-top: 30px; }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .offers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    
+
+    /* FIRST HERO */
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+        height: auto;
+    }
+
+    .hero img {
+        width: 90%;
+        margin-top: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    /* SECOND HERO (hero2) */
+    .hero2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero2-left img {
+        width: 260px;
+    }
+
+    .hero2-right {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /* Product Grid */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .product-card img {
+        height: 160px;
+    }
+
+    /* Offers */
+    .offers {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+}
+
+/* SMALL MOBILE */
+@media(max-width: 480px) {
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 200px;
+    }
+}
+
+
+/* Typing + Floating Vibration Animation for Hero Heading */
+.hero-text h1 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #000; 
+    width: 0;
+
+    /* Typing first → then floating animation */
+    animation: typing 3s steps(30, end) forwards,
+               blink 0.7s step-end infinite,
+               floatVibe 2s ease-in-out infinite;
+    
+    animation-delay: 0s, 3s, 3s;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Cursor blinking */
+@keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: black; }
+}
+
+/* Floating / Vibration effect */
+@keyframes floatVibe {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px) rotate(0.3deg); }
+    100% { transform: translateY(0); }
+}
+
+
+
+/* HERO 3 SECTION (WOMEN) */
+.hero3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8%;
+}
+
+.hero3-left {
+    max-width: 450px;
+}
+
+.hero3-left h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.hero3-left p {
+    color: #555;
+    margin: 15px 0;
+    max-width: 420px;
+}
+
+.hero3-left button {
+    padding: 12px 25px;
+    border: none;
+    background: #111;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero3-right img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+/* HERO 3 MOBILE */
+@media(max-width: 768px) {
+    .hero3 {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero3-right img {
+        width: 260px;
+        margin-bottom: 20px;
+    }
+
+    .hero3-left {
+        margin-top: 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<!-- MAIN HERO -->
+<section class="hero fade-up">
+    <div class="hero-text">
+        <h1>Men's New Arrivals</h1>
+        <p>Holiday 2025 Collection — modern, clean & timeless styles.</p>
+        <button onclick="location.href='men.html'">Shop Men</button>
+    </div>
+
+    <img class="fade-right" src="https://i.pinimg.com/736x/f4/5a/98/f45a98fefc03972f92f31cdbd24e0b9d.jpg" alt="Model">
+</section>
+
+<!-- SECOND HERO -->
+<section class="hero2 fade-up">
+    <div class="hero2-left fade-left">
+        <img src="https://i.pinimg.com/1200x/d2/65/33/d26533eaf776360943e47abfdd654d4c.jpg" alt="">
+    </div>
+
+    <div class="hero2-right fade-right">
+        <h2>Fashion Collection</h2>
+        <p>
+            We have a great collection of premium fashion products.
+            Shop now to get the latest trends with amazing offers!
+        </p>
+        <button onclick="location.href='categories.html'">Explore More</button>
+    </div>
+</section>
+
+<!-- HERO 3 -->
+<section class="hero3 fade-up">
+    <div class="hero3-left fade-left">
+        <h2>Women’s Collection</h2>
+        <p>
+            Discover elegant, modern & premium women's fashion.
+            Fresh arrivals with exclusive styles you’ll love!
+        </p>
+        <button onclick="location.href='women.html'">Shop Women</button>
+    </div>
+
+    <div class="hero3-right fade-right">
+        <img src="https://i.pinimg.com/736x/1a/dc/66/1adc6631610f4b2d0dee6f20b883b14f.jpg" alt="Women Fashion">
+    </div>
+</section>
+
+<!-- TRENDING ITEMS -->
+<section class="trending fade-up">
+    <h2>Trending Items</h2>
+
+    <div class="product-grid">
+        <div class="product-card fade-up">
+            <img src="https://i.pinimg.com/736x/f7/f1/44/f7f144dd042f1eb7c682a872988a3b87.jpg" alt="">
+            <h4>Checked Shirt's</h4>
+        </div>
+
+        <div class="product-card fade-up">
+            <img src="https://i.pinimg.com/1200x/5c/16/9c/5c169c5041b8660f9f09d46d68fcdb2b.jpg" alt="">
+            <h4>jacket's</h4>
+        </div>
+
+        <div class="product-card fade-up">
+            <img src="https://i.pinimg.com/1200x/3e/72/53/3e7253c452af1bc6c85281edd4d9b696.jpg" alt="">
+            <h4>Hoodie's</h4>
+        </div>
+
+        <div class="product-card fade-up">
+            <img src="https://i.pinimg.com/736x/c1/ab/c4/c1abc48781652b49a841b4d4f544b793.jpg" alt="">
+            <h4>Casual Shirt's</h4>
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card fade-up">
+            <img src="https://i.pinimg.com/736x/ef/97/25/ef972507d073f998e8091814528e86d1.jpg" alt="">
+            <h4>Blazer's</h4>
+        </div>
+
+        <div class="product-card fade-up">
+            <img src="https://i.pinimg.com/736x/7e/ec/72/7eec7202ed2fad2dc0a5c8551c8f79aa.jpg" alt="">
+            <h4>trousers's</h4>
+        </div>
+
+        <div class="product-card fade-up">
+            <img src="https://plus.unsplash.com/premium_photo-1691622500885-0f616b3f72f4?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <h4>Jacket's</h4>
+        </div>
+
+        <div class="product-card fade-up">
+            <img src="https://i.pinimg.com/736x/79/68/3e/79683efcbb63ca368dc23408abf4b132.jpg" alt="">
+            <h4>Long-Sleeve Midi/Maxi Dress's</h4>
+        </div>
+    </div>
+
+</section>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+const elements = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.2 });
+
+elements.forEach(el => observer.observe(el));
+</script>
+<script src="float-window.js"></script>
+
+
+</body>
+</html>
